@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "Inställningar";
 "settings_autoplay_title" = "Automatisk Uppspelning";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "Fortsätt uppspelning av alla filer i biblioteket som du inte lyssnat klart på, inklusive filer i spellistor.";
 "settings_smartrewind_title" = "Automatisk Tillbakaspolning";
 "settings_smartrewind_description" = "Spola tillbaka 30 sekunder efter appen varit pausad i 10 minuter.";

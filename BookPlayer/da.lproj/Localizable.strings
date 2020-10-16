@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "Indstillinger";
 "settings_autoplay_title" = "AutoPlay Bibliotek";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "Fortsæt afspilningen med alle elementer i biblioteket, der ikke er afsluttet, inklusive herunder filer i playlister.";
 "settings_smartrewind_title" = "Smart Tilbagespolning";
 "settings_smartrewind_description" = "Spol 30 sekunder tilbage, efter at du har sat bogen på pause i 10 minutter.";

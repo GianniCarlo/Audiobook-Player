@@ -10,3 +10,4 @@ github "GianniCarlo/Themeable" "master"
 github "getsentry/sentry-cocoa" "4.1.0"
 github "onevcat/Kingfisher" ~> 5.0
 github "bizz84/SwiftyStoreKit" "0.14.2"
+github "swisspol/GCDWebServer" ~> 3.5.4

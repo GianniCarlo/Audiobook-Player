@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "设置";
 "settings_autoplay_title" = "自动播放有声书库";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "继续播放有声书库中所有尚未完成的项目，包括播放列表中的文件。";
 "settings_smartrewind_title" = "智能倒带";
 "settings_smartrewind_description" = "暂停 10 分钟后倒带 30 秒。";

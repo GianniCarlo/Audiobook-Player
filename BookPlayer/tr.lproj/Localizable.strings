@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "Ayarlar";
 "settings_autoplay_title" = "Kitaplığı Otomatik Oynat";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "Oynatma listelerindeki dosyalar da dahil olmak üzere, Kitaplıktaki tamamlanmamış tüm öğelerle oynatmaya devam edin.";
 "settings_smartrewind_title" = "Akıllı Geri Sarma";
 "settings_smartrewind_description" = "10 dakika duraklatıldıktan sonra 30 saniye geri sarın.";

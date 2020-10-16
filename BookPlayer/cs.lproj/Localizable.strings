@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "Nastavení";
 "settings_autoplay_title" = "Knihovna automatického přehrávání";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "Pokračování přehrávání všech nedokončených položek v knihovně, včetně souborů v seznamech stop.";
 "settings_smartrewind_title" = "Chytré přetáčení";
 "settings_smartrewind_description" = "Po přerušení poslechu na 10 minud dojde k přetočení zpět o 30 sekund.";

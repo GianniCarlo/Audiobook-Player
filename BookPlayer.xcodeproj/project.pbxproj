@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC2DC2024CE61FA00ACA3FF /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC2DC1F24CE61FA00ACA3FF /* GCDWebServers.framework */; };
+		2AC2DC2224CE625200ACA3FF /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2DC2124CE625200ACA3FF /* ImportViewController.swift */; };
 		4109246C21A2019400D5DF11 /* CheckboxSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109246B21A2019400D5DF11 /* CheckboxSelectionView.swift */; };
 		410C4692227358CD0040114D /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F516952272CC5300F36C3E /* WatchConnectivityService.swift */; };
 		410C4693227358CD0040114D /* WatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F516952272CC5300F36C3E /* WatchConnectivityService.swift */; };
@@ -357,6 +359,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AC2DC1F24CE61FA00ACA3FF /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/iOS/GCDWebServers.framework; sourceTree = "<group>"; };
+		2AC2DC2124CE625200ACA3FF /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
 		4109246B21A2019400D5DF11 /* CheckboxSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxSelectionView.swift; sourceTree = "<group>"; };
 		410C46972274EA350040114D /* DataManager+WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+WatchApp.swift"; sourceTree = "<group>"; };
 		410D0FEC1EDCF4B000A52EB9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -654,6 +658,7 @@
 				4193E1FC24394CEF004D6A82 /* Alamofire.framework in Frameworks */,
 				41AD3DB322205C5A00DC41E1 /* Kingfisher.framework in Frameworks */,
 				41D7944F22260EC000228580 /* SwiftyStoreKit.framework in Frameworks */,
+				2AC2DC2024CE61FA00ACA3FF /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +889,7 @@
 		41AABFFA1E705D18006BD2E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AC2DC1F24CE61FA00ACA3FF /* GCDWebServers.framework */,
 				4193E1FB24394CEF004D6A82 /* Alamofire.framework */,
 				41F898AE2402080C00F58B8A /* ZipArchive.framework */,
 				4112AFD5223AD27D00BFEA55 /* Sentry.framework */,
@@ -1071,6 +1077,7 @@
 				41AD3DAE221E678600DC41E1 /* PlusViewController.swift */,
 				419B374423B8D18000128A8F /* PlusBannerView.xib */,
 				415758E92226E18800DDB9B6 /* PlusBannerView.swift */,
+				2AC2DC2124CE625200ACA3FF /* ImportViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1631,6 +1638,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyStoreKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GCDWebServers.framework",
 			);
 			name = "Copy Frameworks managed by Carthage";
 			outputPaths = (
@@ -1778,6 +1786,7 @@
 				41544A1421BAF41400740AD2 /* ItemSelectionViewController.swift in Sources */,
 				C3A479152094CA3800D92122 /* UIImage+BookPlayer.swift in Sources */,
 				413616401D2E21F000E48944 /* LibraryViewController.swift in Sources */,
+				2AC2DC2224CE625200ACA3FF /* ImportViewController.swift in Sources */,
 				418B6CFC1D2707F800F974FB /* AppDelegate.swift in Sources */,
 				41964C832220B4F700FF1A2F /* ContributorCellView.swift in Sources */,
 				C30EEEBF2079645C00A4ED33 /* PlayerContainerViewController.swift in Sources */,

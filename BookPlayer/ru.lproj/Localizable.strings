@@ -15,6 +15,8 @@
 "settings_autoplay_title" = "Автовоспроизведение библиотеки";
 "settings_autoplay_description" = "Продолжить воспроизведение всех незавершённых объектов в библиотеке, включая файлы в плейлистах.";
 "settings_smartrewind_title" = "Умная перемотка";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_smartrewind_description" = "Перемотка назад на 30 секунд после приостановки на 10 минут.";
 "settings_boostvolume_title" = "Увеличить громкость";
 "settings_boostvolume_description" = "Удваивает громкость. \nИспользуйте с осторожностью и заботой о вашем слухе.";

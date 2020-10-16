@@ -13,6 +13,8 @@
 /* Title that is shown as the navigation bar title */
 "settings_title" = "Einstellungen";
 "settings_autoplay_title" = "Bibliothek automatisch abspielen";
+"settings_import_title" = "Import Books";
+"settings_wifi_import_desc" = "1. Connect your computer to Wi-Fi.\n2. Enter the address in your browser\n3. Upload one file at at a time\n4. Don't close this page until the transfer is complete.\n5. Files will show up in Library";
 "settings_autoplay_description" = "Wiedergabe aller noch nicht gehörten Dateien in der Bibliothek, einschließlich Dateien in Wiedergabelisten.";
 "settings_smartrewind_title" = "Intelligentes Zurückspulen";
 "settings_smartrewind_description" = "Spule nach einer Pause von länger als 10 Minuten bis zu 30 Sekunden zurück.";

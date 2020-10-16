@@ -29,15 +29,15 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
     var iconObserver: NSKeyValueObservation!
 
     enum SettingsSection: Int {
-        case plus = 0, theme, playback, autoplay, autolock, siri, support, credits
+        case plus = 0, theme, playback, autoplay, autolock, siri, bookimport, support, credits
     }
 
     let lastPlayedShortcutPath = IndexPath(row: 0, section: 5)
     let sleepTimerShortcutPath = IndexPath(row: 1, section: 5)
 
     let supportSection: Int = 6
-    let githubLinkPath = IndexPath(row: 0, section: 6)
-    let supportEmailPath = IndexPath(row: 1, section: 6)
+    let githubLinkPath = IndexPath(row: 0, section: 7)
+    let supportEmailPath = IndexPath(row: 1, section: 7)
 
     var version: String = "0.0.0"
     var build: String = "0"
@@ -169,6 +169,8 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
             return "settings_siri_title".localized
         case .support:
             return "settings_support_title".localized
+        case .bookimport:
+            return "settings_import_title".localized
         default:
             return super.tableView(tableView, titleForHeaderInSection: section)
         }
