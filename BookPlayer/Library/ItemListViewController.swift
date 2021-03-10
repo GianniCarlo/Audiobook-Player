@@ -24,16 +24,48 @@ class ItemListViewController: UIViewController, ItemList, ItemListAlerts, ItemLi
 
     private var previousLeftButtons: [UIBarButtonItem]?
     lazy var selectButton: UIBarButtonItem = UIBarButtonItem(title: "select_all_title".localized, style: .plain, target: self, action: #selector(selectButtonPressed))
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        return searchController
+    }()
 
     var library: Library!
 
-    // TableView's datasource
     var items: [LibraryItem] {
-        guard self.library != nil else {
+        guard
+            self.library != nil,
+            let items = self.library.items?.array as? [LibraryItem]
+        else {
             return []
         }
 
-        return self.library.items?.array as? [LibraryItem] ?? []
+        guard
+            let searchText = self.searchController.searchBar.text?.localizedLowercase,
+            !searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        else {
+            return items
+        }
+
+        return items.filter { item in
+
+            if let book = item as? Book {
+                return book.title.localizedLowercase.contains(searchText)
+                    || book.author.localizedLowercase.contains(searchText)
+            }
+
+            if let playlist = item as? Playlist,
+                let books = playlist.books?.array as? [Book] {
+                return playlist.title.localizedLowercase.contains(searchText)
+                    || books.contains { book in
+                        return book.title.localizedLowercase.contains(searchText)
+                            || book.author.localizedLowercase.contains(searchText)
+                }
+            }
+
+            return item.title.localizedLowercase.contains(searchText)
+        }
     }
 
     // MARK: - Lifecycle
@@ -72,6 +104,8 @@ class ItemListViewController: UIViewController, ItemList, ItemListAlerts, ItemLi
         // Prepare empty states
         self.toggleEmptyStateView()
         self.showLoadView(false)
+
+        self.navigationItem.searchController = self.searchController
 
         self.setupObservers()
 
@@ -681,18 +715,11 @@ extension ItemListViewController: UIDocumentPickerDelegate {
         UIApplication.shared.isIdleTimerDisabled = false
     }
 
-    // iOS 11+
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         UIApplication.shared.isIdleTimerDisabled = false
         for url in urls {
             DataManager.processFile(at: url)
         }
-    }
-
-    // support iOS 10
-    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
-        UIApplication.shared.isIdleTimerDisabled = false
-        DataManager.processFile(at: url)
     }
 }
 
@@ -737,5 +764,11 @@ extension ItemListViewController: Themeable {
         self.bulkControls.layer.shadowColor = theme.useDarkVariant
             ? UIColor.white.cgColor
             : UIColor(red: 0.12, green: 0.14, blue: 0.15, alpha: 1.0).cgColor
+    }
+}
+
+extension ItemListViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        self.tableView.reloadData()
     }
 }
